@@ -1,0 +1,6 @@
+"dataset_name": "single_choice_sociology"
+"description": "The following are single choice questions (with answers) about sociology.\n\n"
+"group": "social_sciences"
+"group_alias": "social_sciences"
+"include": "_default_single_choice_template_yaml"
+"task": "single_choice_sociology"

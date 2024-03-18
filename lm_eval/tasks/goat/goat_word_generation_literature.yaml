@@ -1,0 +1,6 @@
+"dataset_name": "word_generation_literature"
+"description": "The following are word generation questions (with answers) about literature.\n\n"
+"group": "humanities"
+"group_alias": "humanities"
+"include": "_default_word_generation_template_yaml"
+"task": "word_generation_literature"
