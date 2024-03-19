@@ -324,7 +324,6 @@ def acc_all(items):
     aggregation="mean",
 )
 def mult_choice_exact_match(items):
-    scores = []
     gold, pred = items
 
     gold_answers = gold.split(",")
