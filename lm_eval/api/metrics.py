@@ -339,11 +339,10 @@ def mult_choice_exact_match(items):
     aggregation="mean",
 )
 def word_generation_exact_match(items):
-    scores = []
-    gold_answer, pred = items
-    pred_answers = pred.split(",")
-    for pred_ans in pred_answers:
-        if gold_answer == pred_ans:
+    gold, pred_answer = items
+    gold_answers = gold.split(",")
+    for gold_ans in gold_answers:
+        if pred_answer == gold_ans:
             return 1
     return 0
 
