@@ -7,7 +7,7 @@ fewshot_config:
 doc_to_text: "Вопрос: {{input}}\nОтвет должен состоять из одного или нескольких слов, написанных слитно, без пробелов и без запятых.\n\nОтвет:"
 doc_to_target: "{{answer}}"
 metric_list:
-  - metric: word_generation_exact_match
+  - metric: word_in_set
     aggregation: mean
     higher_is_better: true
   - metric: exact_match
@@ -17,8 +17,10 @@ generation_kwargs:
   until:
     - "\n\n"
     - "Вопрос:"
+    - "</s>"
   do_sample: false
   temperature: 0.0
+  num_beams: 3
 repeats: 1
 num_fewshot: 5
 metadata:

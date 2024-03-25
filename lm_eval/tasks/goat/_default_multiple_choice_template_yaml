@@ -4,7 +4,7 @@ test_split: test
 fewshot_split: dev
 fewshot_config:
   sampler: first_n
-doc_to_text: "Вопрос: {{input}} Ответ должен состоять из цифр, написанных в порядке возрастания через запятую.\n\nОтвет:"
+doc_to_text: "Вопрос: {{input}}\nОтвет должен состоять из последовательности цифр, написанных слитно.\n\nОтвет:"
 doc_to_target: "{{answer}}"
 metric_list:
   - metric: exact_match
@@ -12,21 +12,19 @@ metric_list:
     higher_is_better: true
     ignore_case: true
     ignore_punctuation: false
-    regexes_to_ignore:
-      - "\\$"
-  - metric: mult_choice_exact_match
+  - metric: multi_choice_em_unordered
     aggregation: mean
     higher_is_better: true
     ignore_case: true
     ignore_punctuation: false
-    regexes_to_ignore:
-      - "\\$"
 generation_kwargs:
   until:
     - "\n\n"
     - "Вопрос:"
+    - "</s>"
   do_sample: false
   temperature: 0.0
+  num_beams: 3
 repeats: 1
 num_fewshot: 5
 filter_list:

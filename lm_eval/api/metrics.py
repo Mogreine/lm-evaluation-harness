@@ -318,28 +318,35 @@ def acc_all(items):
 
 
 @register_metric(
-    metric="mult_choice_exact_match",
+    metric="multi_choice_em_unordered",
     higher_is_better=True,
     output_type="generate_until",
     aggregation="mean",
 )
-def mult_choice_exact_match(items):
+def multi_choice_em_unordered(items, **kwargs):
     gold, pred = items
 
-    gold_answers = gold.split(",")
-    pred_answers = pred.split(",")
+    if "sep" in kwargs:
+        gold_answers = gold.split(kwargs["sep"])
+        pred_answers = pred.split(kwargs["sep"])
+    else:
+        gold_answers = gold.split(",")
+        pred_answers = pred.split(",")
     return set(gold_answers) == set(pred_answers)
 
 
 @register_metric(
-    metric="word_generation_exact_match",
+    metric="word_in_set",
     higher_is_better=True,
     output_type="generate_until",
     aggregation="mean",
 )
-def word_generation_exact_match(items):
+def word_in_set(items, **kwargs):
     gold, pred_answer = items
-    gold_answers = gold.split(",")
+    if "sep" in kwargs:
+        gold_answers = gold.split(kwargs["sep"])
+    else:
+        gold_answers = gold.split(",")
     for gold_ans in gold_answers:
         if pred_answer == gold_ans:
             return 1
