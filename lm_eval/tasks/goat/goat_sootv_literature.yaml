@@ -1,0 +1,6 @@
+"dataset_name": "sootv_literature"
+"task": "literature_matching"
+"description": "The following are matching questions (with answers) about literature.\n\n"
+"group": "humanities"
+"group_alias": "humanities"
+"include": "_default_sootv_template_yaml"
