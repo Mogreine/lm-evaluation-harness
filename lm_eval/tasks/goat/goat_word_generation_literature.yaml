@@ -1,4 +1,4 @@
-"dataset_name": "word_generation_literature"
+"dataset_name": "literature_word_generation"
 "task": "literature_word_generation"
 "description": "The following are word generation questions (with answers) about literature.\n\n"
 "group": "humanities"

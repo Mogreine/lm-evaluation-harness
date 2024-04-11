@@ -1,6 +1,0 @@
-"dataset_name": "matching_sociology"
-"task": "sociology_matching"
-"description": "The following are matching questions (with answers) about sociology.\n\n"
-"group": "social_sciences"
-"group_alias": "social_sciences"
-"include": "_default_matching_template_yaml"

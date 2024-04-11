@@ -1,4 +1,4 @@
-"dataset_name": "single_choice_sociology"
+"dataset_name": "sociology_single_choice"
 "task": "sociology_single_choice"
 "description": "The following are single choice questions (with answers) about sociology.\n\n"
 "group": "social_sciences"
