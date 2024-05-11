@@ -323,15 +323,11 @@ def acc_all(items):
     output_type="generate_until",
     aggregation="mean",
 )
-def multi_choice_em_unordered(items, **kwargs):
+def multi_choice_em_unordered(items):
     gold, pred = items
 
-    if "sep" in kwargs:
-        gold_answers = gold.split(kwargs["sep"])
-        pred_answers = pred.split(kwargs["sep"])
-    else:
-        gold_answers = gold.split(",")
-        pred_answers = pred.split(",")
+    gold_answers = gold.split(",")
+    pred_answers = pred.split(",")
     return set(gold_answers) == set(pred_answers)
 
 
@@ -341,12 +337,10 @@ def multi_choice_em_unordered(items, **kwargs):
     output_type="generate_until",
     aggregation="mean",
 )
-def word_in_set(items, **kwargs):
+def word_in_set(items):
     gold, pred_answer = items
-    if "sep" in kwargs:
-        gold_answers = gold.split(kwargs["sep"])
-    else:
-        gold_answers = gold.split(",")
+    gold_answers = gold.split(",")
+
     for gold_ans in gold_answers:
         if pred_answer == gold_ans:
             return 1
