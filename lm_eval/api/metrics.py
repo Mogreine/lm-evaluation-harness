@@ -341,7 +341,7 @@ def word_in_set(items):
     gold, pred_answer = items
     gold_answers = gold.split(",")
 
-    return pred_answer in gold_answers
+    return pred_answer.strip() in gold_answers
 
 
 def acc_all_stderr(items):
