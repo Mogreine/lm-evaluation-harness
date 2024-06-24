@@ -10,7 +10,12 @@ from lm_eval import evaluator, utils
 from lm_eval.evaluator import request_caching_arg_to_dict
 from lm_eval.loggers import EvaluationTracker, WandbLogger
 from lm_eval.tasks import TaskManager
-from lm_eval.utils import handle_non_serializable, make_table, simple_parse_args_string, write_results_csv
+from lm_eval.utils import (
+    handle_non_serializable,
+    make_table,
+    simple_parse_args_string,
+    write_results_csv,
+)
 
 
 def _int_or_none_list_arg_type(
@@ -252,6 +257,7 @@ def setup_parser() -> argparse.ArgumentParser:
     )
     parser.add_argument(
         "--output_csv",
+        type=str,
         default=None,
         help="File to csv file to store metric into.",
     )
