@@ -1,6 +1,6 @@
 "dataset_name": "miscellaneous"
 "description": "Ниже приведены вопросы с несколькими вариантами ответов и одним правильным\
-  \ о разное.\n\n"
+  \ на тему разное.\n\n"
 "group": "mmlu_ru_other"
 "group_alias": "other"
 "include": "_default_template_yaml"

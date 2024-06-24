@@ -1,6 +1,6 @@
 "dataset_name": "college_computer_science"
 "description": "Ниже приведены вопросы с несколькими вариантами ответов и одним правильным\
-  \ о вузовская информатика.\n\n"
+  \ на тему вузовская информатика.\n\n"
 "group": "mmlu_ru_stem"
 "group_alias": "stem"
 "include": "_default_template_yaml"

@@ -1,6 +1,6 @@
 "dataset_name": "high_school_statistics"
 "description": "Ниже приведены вопросы с несколькими вариантами ответов и одним правильным\
-  \ о школьная статистика.\n\n"
+  \ на тему школьная статистика.\n\n"
 "group": "mmlu_ru_stem"
 "group_alias": "stem"
 "include": "_default_template_yaml"

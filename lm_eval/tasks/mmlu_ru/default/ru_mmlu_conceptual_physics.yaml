@@ -1,6 +1,6 @@
 "dataset_name": "conceptual_physics"
 "description": "Ниже приведены вопросы с несколькими вариантами ответов и одним правильным\
-  \ о концептуальная физика.\n\n"
+  \ на тему концептуальная физика.\n\n"
 "group": "mmlu_ru_stem"
 "group_alias": "stem"
 "include": "_default_template_yaml"

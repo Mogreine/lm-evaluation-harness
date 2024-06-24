@@ -1,6 +1,6 @@
 "dataset_name": "business_ethics"
 "description": "Ниже приведены вопросы с несколькими вариантами ответов и одним правильным\
-  \ о этика бизнеса.\n\n"
+  \ на тему этика бизнеса.\n\n"
 "group": "mmlu_ru_other"
 "group_alias": "other"
 "include": "_default_template_yaml"

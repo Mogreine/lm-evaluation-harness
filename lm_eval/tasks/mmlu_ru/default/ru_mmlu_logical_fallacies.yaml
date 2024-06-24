@@ -1,6 +1,6 @@
 "dataset_name": "logical_fallacies"
 "description": "Ниже приведены вопросы с несколькими вариантами ответов и одним правильным\
-  \ о логические ошибки.\n\n"
+  \ на тему логические ошибки.\n\n"
 "group": "mmlu_ru_humanities"
 "group_alias": "humanities"
 "include": "_default_template_yaml"

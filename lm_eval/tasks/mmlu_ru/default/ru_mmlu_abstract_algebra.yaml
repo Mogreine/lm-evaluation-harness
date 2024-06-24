@@ -1,6 +1,6 @@
 "dataset_name": "abstract_algebra"
 "description": "Ниже приведены вопросы с несколькими вариантами ответов и одним правильным\
-  \ о абстрактная алгебра.\n\n"
+  \ на тему абстрактная алгебра.\n\n"
 "group": "mmlu_ru_stem"
 "group_alias": "stem"
 "include": "_default_template_yaml"

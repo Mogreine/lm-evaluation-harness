@@ -1,6 +1,6 @@
 "dataset_name": "high_school_physics"
 "description": "Ниже приведены вопросы с несколькими вариантами ответов и одним правильным\
-  \ о школьная физика.\n\n"
+  \ на тему школьная физика.\n\n"
 "group": "mmlu_ru_stem"
 "group_alias": "stem"
 "include": "_default_template_yaml"

@@ -1,6 +1,6 @@
 "dataset_name": "sociology"
 "description": "Ниже приведены вопросы с несколькими вариантами ответов и одним правильным\
-  \ о социология.\n\n"
+  \ на тему социология.\n\n"
 "group": "mmlu_ru_social_sciences"
 "group_alias": "social sciences"
 "include": "_default_template_yaml"

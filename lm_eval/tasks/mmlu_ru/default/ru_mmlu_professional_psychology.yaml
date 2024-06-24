@@ -1,6 +1,6 @@
 "dataset_name": "professional_psychology"
 "description": "Ниже приведены вопросы с несколькими вариантами ответов и одним правильным\
-  \ о профессиональная психология.\n\n"
+  \ на тему профессиональная психология.\n\n"
 "group": "mmlu_ru_social_sciences"
 "group_alias": "social sciences"
 "include": "_default_template_yaml"

@@ -1,6 +1,6 @@
 "dataset_name": "high_school_geography"
 "description": "Ниже приведены вопросы с несколькими вариантами ответов и одним правильным\
-  \ о школьная география.\n\n"
+  \ на тему школьная география.\n\n"
 "group": "mmlu_ru_social_sciences"
 "group_alias": "social sciences"
 "include": "_default_template_yaml"

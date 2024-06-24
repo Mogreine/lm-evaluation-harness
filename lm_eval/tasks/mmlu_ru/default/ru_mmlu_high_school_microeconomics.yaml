@@ -1,6 +1,6 @@
 "dataset_name": "high_school_microeconomics"
 "description": "Ниже приведены вопросы с несколькими вариантами ответов и одним правильным\
-  \ о школьная микроэкономика.\n\n"
+  \ на тему школьная микроэкономика.\n\n"
 "group": "mmlu_ru_social_sciences"
 "group_alias": "social sciences"
 "include": "_default_template_yaml"

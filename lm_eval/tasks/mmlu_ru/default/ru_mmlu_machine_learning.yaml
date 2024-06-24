@@ -1,6 +1,6 @@
 "dataset_name": "machine_learning"
 "description": "Ниже приведены вопросы с несколькими вариантами ответов и одним правильным\
-  \ о машинное обучение.\n\n"
+  \ на тему машинное обучение.\n\n"
 "group": "mmlu_ru_stem"
 "group_alias": "stem"
 "include": "_default_template_yaml"

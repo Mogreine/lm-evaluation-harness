@@ -1,6 +1,6 @@
 "dataset_name": "high_school_psychology"
 "description": "Ниже приведены вопросы с несколькими вариантами ответов и одним правильным\
-  \ о школьная психология.\n\n"
+  \ на тему школьная психология.\n\n"
 "group": "mmlu_ru_social_sciences"
 "group_alias": "social sciences"
 "include": "_default_template_yaml"

@@ -1,6 +1,6 @@
 "dataset_name": "public_relations"
 "description": "Ниже приведены вопросы с несколькими вариантами ответов и одним правильным\
-  \ о связи с общественностью.\n\n"
+  \ на тему связи с общественностью.\n\n"
 "group": "mmlu_ru_social_sciences"
 "group_alias": "social sciences"
 "include": "_default_template_yaml"

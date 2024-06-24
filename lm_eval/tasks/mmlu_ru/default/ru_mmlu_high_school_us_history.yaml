@@ -1,6 +1,6 @@
 "dataset_name": "high_school_us_history"
 "description": "Ниже приведены вопросы с несколькими вариантами ответов и одним правильным\
-  \ о школьная история США.\n\n"
+  \ на тему школьная история США.\n\n"
 "group": "mmlu_ru_humanities"
 "group_alias": "humanities"
 "include": "_default_template_yaml"

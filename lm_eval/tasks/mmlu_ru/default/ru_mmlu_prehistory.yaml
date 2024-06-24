@@ -1,6 +1,6 @@
 "dataset_name": "prehistory"
 "description": "Ниже приведены вопросы с несколькими вариантами ответов и одним правильным\
-  \ о доисторический период.\n\n"
+  \ на тему доисторический период.\n\n"
 "group": "mmlu_ru_humanities"
 "group_alias": "humanities"
 "include": "_default_template_yaml"

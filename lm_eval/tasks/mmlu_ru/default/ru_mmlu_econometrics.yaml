@@ -1,6 +1,6 @@
 "dataset_name": "econometrics"
 "description": "Ниже приведены вопросы с несколькими вариантами ответов и одним правильным\
-  \ о эконометрика.\n\n"
+  \ на тему эконометрика.\n\n"
 "group": "mmlu_ru_social_sciences"
 "group_alias": "social sciences"
 "include": "_default_template_yaml"
