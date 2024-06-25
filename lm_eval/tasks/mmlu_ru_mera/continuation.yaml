@@ -9,7 +9,7 @@ doc_to_text: "{{query}}"
 doc_to_choice: "{{choices}}"
 doc_to_target: "{{label}}"
 metric_list:
-  - metric: acc
+  - metric: acc_norm
     aggregation: mean
     higher_is_better: true
 metadata:
