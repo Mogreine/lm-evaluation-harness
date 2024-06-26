@@ -1,6 +1,6 @@
 "dataset_name": "professional_law"
-"description": "Ниже приведены вопросы с несколькими вариантами ответов и одним правильным\
-  \ на тему профессиональное право.\n\n"
+"description": "Ниже приведены вопросы с ответами на тему профессиональное право.\n\
+  \n"
 "group": "mmlu_ru_continuation_humanities"
 "group_alias": "humanities"
 "include": "_continuation_template_yaml"

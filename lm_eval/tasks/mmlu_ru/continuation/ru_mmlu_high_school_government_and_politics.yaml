@@ -1,6 +1,6 @@
 "dataset_name": "high_school_government_and_politics"
-"description": "Ниже приведены вопросы с несколькими вариантами ответов и одним правильным\
-  \ на тему школьное государственное управление и политика.\n\n"
+"description": "Ниже приведены вопросы с ответами на тему школьное государственное\
+  \ управление и политика.\n\n"
 "group": "mmlu_ru_continuation_social_sciences"
 "group_alias": "social sciences"
 "include": "_continuation_template_yaml"

@@ -12,7 +12,7 @@ def process_docs(dataset: datasets.Dataset) -> datasets.Dataset:
 
 
 def process_docs_continuation(dataset: datasets.Dataset) -> datasets.Dataset:
-    QUERY = """Ниже приведены вопросы с несколькими вариантами ответов и одним правильным на тему {subject}.
+    QUERY = """Ниже приведены вопросы с ответами на тему {subject}.
 Вопрос: {text}
 Ответ:"""
     option_keys = ["option_a", "option_b", "option_c", "option_d"]
