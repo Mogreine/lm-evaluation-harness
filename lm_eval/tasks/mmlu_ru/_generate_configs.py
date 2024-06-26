@@ -81,6 +81,7 @@ def parse_args():
     parser.add_argument("--cot_prompt_path", default=None)
     parser.add_argument("--task_prefix", default="")
     parser.add_argument("--group_prefix", default="")
+    parser.add_argument("--continuation", action="store_true")
     return parser.parse_args()
 
 
@@ -105,6 +106,8 @@ if __name__ == "__main__":
 
         if args.cot_prompt_path is not None:
             description = cot_file[subject]
+        elif args.continuation:
+            description = f"Ниже приведены вопросы с ответами на тему {subject_ru.replace('_', ' ')}.\n\n"
         else:
             description = f"Ниже приведены вопросы с несколькими вариантами ответов и одним правильным на тему {subject_ru.replace('_', ' ')}.\n\n"
 
