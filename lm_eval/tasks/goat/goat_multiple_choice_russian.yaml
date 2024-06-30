@@ -1,0 +1,6 @@
+"dataset_name": "russian_multiple_choice"
+"task": "russian_multiple_choice"
+"description": "The following are multiple choice questions (with answers) about russian.\n\n"
+"group": "russian"
+"group_alias": "russian"
+"include": "_default_multiple_choice_template_yaml"

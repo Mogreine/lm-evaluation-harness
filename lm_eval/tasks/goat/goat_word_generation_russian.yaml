@@ -1,0 +1,6 @@
+"dataset_name": "russian_word_generation"
+"task": "russian_word_generation"
+"description": "The following are word generation questions (with answers) about russian.\n\n"
+"group": "russian"
+"group_alias": "russian"
+"include": "_default_word_generation_template_yaml"
