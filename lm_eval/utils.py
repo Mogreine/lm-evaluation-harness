@@ -499,22 +499,28 @@ def write_results_csv(output_path: str, result_dict, tasks: List[str], model_nam
         if k not in tasks:
             continue
 
-        res_csv[k] = list(dic.values())[0]
+        n = str(result_dict["n-shot"][k])
+        for metric, value in dic.items():
+            m, _, _ = metric.partition(",")
+            if m.endswith("_stderr"):
+                continue
+
+            res_csv[k + "_" + n +"_" + m] = value
 
     write_dict_to_csv(output_path, res_csv)
 
 
 def write_dict_to_csv(file_path: str, data_dict: Dict[str, List[float]]):
-    # Check if file exists
-    file_exists = os.path.isfile(file_path)
+    if os.path.isfile(file_path):
+        with open(file_path, "r") as f:
+            field_names = f.readline().strip().split(",")
+    else:
+        field_names = list(data_dict.keys())
+        with open(file_path, "w") as f:
+            f.write(",".join(field_names) + "\n")
 
     with open(file_path, "a", newline="") as csvfile:
-        fieldnames = list(data_dict.keys())
-        writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
-
-        # If file doesn't exist, write header
-        if not file_exists:
-            writer.writeheader()
+        writer = csv.DictWriter(csvfile, extrasaction="raise", fieldnames=field_names)
 
         # Write data
         writer.writerow(data_dict)

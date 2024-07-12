@@ -51,6 +51,10 @@ if [ -z "$3" ] || [ "$3" = "ru" ]; then
   tasks="winogrande_ru,arc_challenge_ru,hellaswag_ru,mmlu_ru,gsm8k_ru,truthfulqa_mc2_ru"
 elif [ "$3" = "en" ]; then
   tasks="winogrande,arc_challenge,hellaswag,mmlu,gsm8k,truthfulqa_mc2"
+elif [ "$3" = "ru_mini" ]; then
+  tasks="hellaswag_ru,mmlu_ru,mmlu_ru_continuation"
+elif [ "$3" = "mmlu_all" ]; then
+  tasks="mmlu,mmlu_continuation,mmlu_ru,mmlu_ru_continuation,mmlu_ru_mera,mmlu_ru_mera_continuation"
 else
   tasks="$3"
 fi
@@ -64,7 +68,7 @@ fi
 
 # Iterate over the list and run the command for new models
 for model_args_value in "${model_args_list[@]}"; do
-  command="accelerate launch -m  lm_eval --model $model --tasks $tasks --batch_size 4 --model_args $model_args_value --output_csv $csv_output"
+  command="accelerate launch -m  lm_eval --model $model --tasks $tasks --batch_size auto --model_args $model_args_value --output_csv $csv_output"
   output_file="$output_dir/output_${model_args_value//\//_}.txt"  # Replace "/" with "_"
   echo "Running command: $command"
   $command > "$output_file"  # Redirect output to file

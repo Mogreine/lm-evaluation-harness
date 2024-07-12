@@ -1,9 +1,9 @@
 #!/bin/bash
 
-# List of different model_args values
-model_args_list=(
-   "pretrained=deepvk/llama-1.5b-sft"
-   "pretrained=deepvk/llama-3b-sft"
+# List of different model names
+model_names=(
+    "deepvk/llama-1.5b-sft"
+    "deepvk/llama-3b-sft"
 )
 
 # Create a directory to store output files
@@ -11,7 +11,8 @@ output_dir="output_tables"
 mkdir -p $output_dir
 
 # tasks="mmlu,mmlu_continuation,mmlu_generative,mmlu_full_choice"
-tasks="winogrande,arc_challenge,hellaswag,mmlu,gsm8k,truthfulqa_mc2"
+# tasks="winogrande,arc_challenge,hellaswag,mmlu,gsm8k,truthfulqa_mc2"
+tasks="mmlu,mmlu_continuation,mmlu_ru,mmlu_ru_continuation,mmlu_ru_mera,mmlu_ru_mera_continuation"
 
 
 # Iterate over the list and run the command
