@@ -68,7 +68,7 @@ fi
 
 # Iterate over the list and run the command for new models
 for model_args_value in "${model_args_list[@]}"; do
-  command="accelerate launch -m  lm_eval --model $model --tasks $tasks --batch_size auto --model_args $model_args_value --output_csv $csv_output"
+  command="accelerate launch -m  lm_eval --model $model --tasks $tasks --batch_size 4 --model_args $model_args_value --output_csv $csv_output"
   output_file="$output_dir/output_${model_args_value//\//_}.txt"  # Replace "/" with "_"
   echo "Running command: $command"
   $command > "$output_file"  # Redirect output to file
